@@ -26,21 +26,32 @@ At the end of this tutorial, you will be able to:
 
   
 
-###  Exercise 1: Running ora2pg_scanner ###
+###  1: Running ora2pg_scanner ###
 
 The steps in this exercise will demonstrate how to configure the Oracle databases, the input ora2pg_scanner file and run the assessment command.
 
 
-1. Let's create our Oracle user in the Oracle databases
+1. Let's create the Oracle user for the assessment in the Oracle databases:
 
 
        
      ~~~
-     cd c:\ora2pg
+		create user ms_scan_user
+		identified by ora12345
+		default tablespace USERS
+		temporary tablespace TEMP;
      ~~~
      ~~~
-     ora2pg --project_base c:\ts303 -c ora2pg_hr.conf –-init_project 		hr_migration
+		grant dba to ms_scan_user;
      ~~~
+     ~~~
+	 
+	 
+The above script is a suggestion. There are options on what users can be used for this assessment:
+	a) the schemas
+	b) system user
+	c) any other priviledged user or role
+
 
 2. Run the assessment:
 
