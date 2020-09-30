@@ -1,7 +1,7 @@
 driver='MSSQLServerDatabase'
 database='mysqldb666'
 username='corp'
-password='StarWars2015$'
+password='XXXXY'
 
 conn_string= "DSN={0};database={1};UID={2};PWD={3}".format(driver, database, username, password)
 
