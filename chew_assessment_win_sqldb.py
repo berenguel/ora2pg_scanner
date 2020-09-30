@@ -6,7 +6,7 @@ server='sqldb666.database.windows.net'
 port=1433
 database='mysqldb666'
 username='corp'
-password='StarWars2015$'
+password='XXXXYYYY'
 
 conn_string = "driver={0}; server={1}; port={2}; DATABASE={3};UID={4}; PWD={5}".format(driver, server, port, database, username, password)
 

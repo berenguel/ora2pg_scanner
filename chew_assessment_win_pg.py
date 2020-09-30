@@ -4,7 +4,7 @@ import psycopg2
 pghost = "mypgbeast1.postgres.database.azure.com"
 pgdatabase = "HR"
 pguser = "corp@mypgbeast1"
-pgpassword = "mypg12345$"
+pgpassword = "XXXYYYYYY"
 sslmode = "require"
 
 conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(pghost, pguser, pgdatabase, pgpassword, sslmode)
